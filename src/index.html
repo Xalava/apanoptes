@@ -28,10 +28,140 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <h1>Argus Panoptes</h1>
-  <p>Network <span id="netid"></span></p>
-  <p>Last Block <span id="lastblock"></span></p>
-  <ul id="messages"></ul>
+  <div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>Argus Panoptes</b></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Nodes List</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Github</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
+      <div class="row container-fluid">
+        <h3>Ethereum Network Stats</h3>
+        <table class="table">
+          <tr>
+            <td>Network ID</td>
+            <td><span id="netid"></span></td>
+          </tr>
+          <tr>
+            <td>Gas Price:</td>
+            <td><span id="gasprice"></span> Gwei</td>
+          </tr>
+          <tr>
+            <td>Last block:</td>
+            <td><span id="lastblock"></span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="row container-fluid">
+        <h3>Node</h3>
+        <div class="col-lg-12">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter you Pantheon instance IP and port, ex.: 0.0.0.0:8545 ">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div><br/>
+          <div class="well">
+            <h4>Log level</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="INFO  " checked>
+                FATAL
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                ERROR
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                WARN
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                INFO
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                DEBUG
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                ALL
+              </label>
+            </div>
+        </div>
+      </div>
+
+      <ul id="messages"></ul>
+
+      <div class="row container-fluid">
+        <h3>Node info</h3>
+        <table class="table">
+          <tr>
+            <td>Network:</td>
+            <td>MAIN</td>
+          </tr>
+          <tr>
+            <td>Client version:</td>
+            <td>pantheon v.0.1</td>
+          </tr>
+          <tr>
+            <td>Latency:</td>
+            <td>0.5 ms</td>
+          </tr>
+          <tr>
+            <td>Peers:</td>
+            <td>123</td>
+          </tr>
+          <tr>
+            <td>Log level:</td>
+            <td>INFO</td>
+          </tr>
+          <tr>
+            <td>Start time:</td>
+            <td>2018-11-03 11:05:32.354+00:00</td>
+          </tr>
+          <tr>
+            <td>URL:</td>
+            <td>0:0:0:0:0:0:0:0:30303</td>
+          </tr>
+        </table>
+      </div>
+
+
+
+  </div> <!-- /container -->
+
+
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>

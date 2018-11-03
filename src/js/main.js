@@ -20,6 +20,14 @@ $(function() {
     }
   );
 
+    
+  web3.eth.getGasPrice()
+  .then(
+    (res)=> {
+      $( "#gasprice" ).html( res );
+    }
+  );
+
   if (WSServer) {
     var socket = io(WSServer);
       socket.emit('tail', {test: "1233"});
