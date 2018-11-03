@@ -23,6 +23,16 @@
 
   <link rel="stylesheet" href="css/main.css">
 
+
+  <script>
+    $(document).ready(function(){
+      $('#myTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    })
+  </script>
+
 </head>
 
 <body>
@@ -80,41 +90,79 @@
 
       <section>
 
-        <h3>Node Info</h3>
-        <h4>0:0:0:0:0:0:0:0:30303</h4>
-        <br/>
-        <table class="table">
-          <tr>
-            <td>Network:</td>
-            <td>MAIN</td>
-          </tr>
-          <tr>
-            <td>Client version:</td>
-            <td>pantheon v.0.1</td>
-          </tr>
-          <tr>
-            <td>Latency:</td>
-            <td>0.5 ms</td>
-          </tr>
-          <tr>
-            <td>Peers:</td>
-            <td>123</td>
-          </tr>
-          <tr>
-            <td>Log level:</td>
-            <td>INFO</td>
-          </tr>
-          <tr>
-            <td>Start time:</td>
-            <td>2018-11-03 11:05:32.354+00:00</td>
-          </tr>
-          <tr>
-            <td>URL:</td>
-            <td>0:0:0:0:0:0:0:0:30303</td>
-          </tr>
-        </table>
+        <h3>Node 0:0:0:0:0:0:0:0:30303</h3>
 
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#node-info" aria-controls="node-info" role="tab" data-toggle="tab">Node Info</a></li>
+          <li role="presentation"><a href="#sys-info" aria-controls="sys-info" role="tab" data-toggle="tab">System Info</a></li>
+        </ul>
 
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="node-info">
+            <table class="table">
+              <tr>
+                <td>Network:</td>
+                <td>MAIN</td>
+              </tr>
+              <tr>
+                <td>Client version:</td>
+                <td>pantheon v.0.1</td>
+              </tr>
+              <tr>
+                <td>Latency:</td>
+                <td>0.5 ms</td>
+              </tr>
+              <tr>
+                <td>Peers:</td>
+                <td>123</td>
+              </tr>
+              <tr>
+                <td>Log level:</td>
+                <td>INFO</td>
+              </tr>
+              <tr>
+                <td>Start time:</td>
+                <td>2018-11-03 11:05:32.354+00:00</td>
+              </tr>
+              <tr>
+                <td>URL:</td>
+                <td>0:0:0:0:0:0:0:0:30303</td>
+              </tr>
+            </table>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="sys-info">
+            <table class="table">
+              <tr>
+                <td>Hostmame:</td>
+                <td>myhost</td>
+              </tr>
+              <tr>
+                <td>uptime:</td>
+                <td>123123123123</td>
+              </tr>
+              <tr>
+                <td>Platform:</td>
+                <td>linux</td>
+              </tr>
+              <tr>
+                <td>Architecture:</td>
+                <td>x64</td>
+              </tr>
+              <tr>
+                <td>Cores:</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Total memory:</td>
+                <td>123123123</td>
+              </tr>
+              <tr>
+                <td>Free   memory:</td>
+                <td>123123123</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </section>
       <section>
 
@@ -174,11 +222,11 @@
         <h4>
           <input style="checkbox" type="checkbox" checked> live mode<br/>
           <input style="checkbox" type="checkbox"> only errors
-        </h4><br/><br/>
+        </h4>
         <!-- <p class="text-white bg-dark" id="console">#CONSOLE
                             <ul id="messages"></ul>
                         </p> -->
-
+        <div style="height:300px; overflow-y:scroll;overflow-x:hidden">
         <table class="table table-hover">
           <tbody>
             <tr class="warning">
@@ -228,11 +276,12 @@
             </tr>
           </tbody>
         </table>
+      </div>
       </section>
 
 
-    </div>    <!--row-->
-
+    </div>   <!--row-->
+    <br/><br/><br/>
   </div> <!-- /container -->
 
 
