@@ -1,0 +1,529 @@
+Setting logging level to DEBUG
+2018-11-03 14:08:16.984+01:00 | main | INFO  | KeyPairUtil | Loaded key 0x2fc3ba7895aaef1b62235531272f86adfec3567c89f373660fcf0ffced2d4e727ffa63af145525b3bebe8c997cbb888240b7fa449212666d7d161474c241254a from /home/jordan/pantheon/build/install/pantheon/key
+2018-11-03 14:08:19.991+01:00 | nioEventLoopGroup-2-1 | INFO  | NettyP2PNetwork | P2PNetwork started and listening on /0:0:0:0:0:0:0:0:30303
+2018-11-03 14:08:20.014+01:00 | main | INFO  | Runner | Starting Ethereum main loop ... 
+2018-11-03 14:08:20.014+01:00 | main | INFO  | NetworkRunner | Starting Network.
+2018-11-03 14:08:20.023+01:00 | main | INFO  | DefaultSynchronizer | Starting synchronizer.
+2018-11-03 14:08:20.031+01:00 | NetworkRunner | INFO  | PeerDiscoveryAgent | Starting peer discovery agent on host=0.0.0.0, port=30303
+2018-11-03 14:08:20.033+01:00 | main | INFO  | WaitForPeersTask | Waiting for 1 peers to connect.
+2018-11-03 14:08:20.041+01:00 | main | INFO  | Runner | Ethereum main loop is up.
+2018-11-03 14:08:20.134+01:00 | vert.x-eventloop-thread-1 | INFO  | PeerDiscoveryAgent | Started peer discovery agent successfully, on effective host=0.0.0.0 and port=30303
+2018-11-03 14:08:20.587+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xa979fb575495b8d6db44f750317d0f46... under INITIATOR role
+2018-11-03 14:08:20.649+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@6ed377b0
+2018-11-03 14:08:20.686+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x78de8a0916848093c73790ead81d1928... under INITIATOR role
+2018-11-03 14:08:20.712+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@420d4023
+2018-11-03 14:08:20.722+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x158f8aab45f6d19c6cbf4a089c267054... under INITIATOR role
+2018-11-03 14:08:20.738+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@3c5c402e
+2018-11-03 14:08:20.748+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xefad3d812040e121ac22d78d1c3209cc... under INITIATOR role
+2018-11-03 14:08:20.759+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@294d7cb7
+2018-11-03 14:08:20.764+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /52.16.188.185:30303.
+2018-11-03 14:08:20.784+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /40.115.37.119:30303.
+2018-11-03 14:08:20.815+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0xa979fb575495b8d6db44f750317d0f46...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@20366af
+2018-11-03 14:08:20.820+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:20.823+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:20.847+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:20.968+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /191.235.84.50:30303.
+2018-11-03 14:08:21.062+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /13.75.154.138:30303.
+2018-11-03 14:08:21.195+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x78de8a0916848093c73790ead81d1928...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@46dfc59c
+2018-11-03 14:08:21.199+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:21.199+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:21.204+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:21.369+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x158f8aab45f6d19c6cbf4a089c267054...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@89a9e8
+2018-11-03 14:08:21.377+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:21.380+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:21.390+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:24.950+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xd9f3454f780da7457f00c17f26939ca3... under INITIATOR role
+2018-11-03 14:08:24.960+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@301e8bde
+2018-11-03 14:08:25.079+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /18.224.180.116:30303.
+2018-11-03 14:08:25.208+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0xd9f3454f780da7457f00c17f26939ca3...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@56df224c
+2018-11-03 14:08:25.210+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:25.210+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:25.211+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:25.332+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='pantheon/0.8.1', capabilities=[eth/62, eth/63], port=30303, nodeId=0xd9f3454f780da7457f00c17f26939ca3934b13add0ba78139a0ce266316e713d73e8bda6053ec3413d578352a4aecd1d54e8344b358db00ea7eb970ce5ca98d7}
+2018-11-03 14:08:25.332+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:25.377+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0xd9f3454f780da7457f....
+2018-11-03 14:08:25.401+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0xd9f3454f780da7457f00c17f26939ca3934b13add0ba78139a0ce266316e713d73e8bda6053ec3413d578352a4aecd1d54e8344b358db00ea7eb970ce5ca98d7
+2018-11-03 14:08:25.401+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 4 pending, 1 active connections.
+2018-11-03 14:08:25.407+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire DISCONNECT (TOO_MANY_PEERS) from peer: pantheon/0.8.1
+2018-11-03 14:08:25.407+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyPeerConnection | Disconnected (TOO_MANY_PEERS) from PeerInfo{version=5, clientId='pantheon/0.8.1', capabilities=[eth/62, eth/63], port=30303, nodeId=0xd9f3454f780da7457f00c17f26939ca3934b13add0ba78139a0ce266316e713d73e8bda6053ec3413d578352a4aecd1d54e8344b358db00ea7eb970ce5ca98d7}
+2018-11-03 14:08:25.411+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Peer requested to be disconnected (TOO_MANY_PEERS), 0 peers left: EthPeers{connections=}
+2018-11-03 14:08:47.301+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0xefad3d812040e121ac22d78d1c3209cc...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@64921de5
+2018-11-03 14:08:47.304+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:47.304+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:47.305+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:47.547+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Ethereum(J)/v1.9.0/Linux/Release/Java/Dev', capabilities=[eth/62, eth/63], port=30303, nodeId=0xefad3d812040e121ac22d78d1c3209cc8d8ad40d9f52d06ab606429eb12ec1167fd749a2ff33a1e4b75d039654159a367915a5955e3fcbaeaeb983f17494b3d4}
+2018-11-03 14:08:47.547+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:47.548+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0xefad3d812040e121ac....
+2018-11-03 14:08:47.549+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0xefad3d812040e121ac22d78d1c3209cc8d8ad40d9f52d06ab606429eb12ec1167fd749a2ff33a1e4b75d039654159a367915a5955e3fcbaeaeb983f17494b3d4
+2018-11-03 14:08:47.550+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 3 pending, 1 active connections.
+2018-11-03 14:08:47.597+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from 0xefad3d812040e121ac...: tech.pegasys.pantheon.ethereum.eth.messages.StatusMessage@53318c46
+2018-11-03 14:08:47.598+01:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Requesting chain head info for 0xefad3d812040e121ac...
+2018-11-03 14:08:47.601+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:47.607+01:00 | nioEventLoopGroup-3-1 | INFO  | WaitForPeersTask | Finished waiting for peers to connect.
+2018-11-03 14:08:47.611+01:00 | nioEventLoopGroup-3-1 | DEBUG | DetermineCommonAncestorTask | Searching for common ancestor with 0xefad3d812040e121ac... between 0 and 3220
+2018-11-03 14:08:47.613+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByNumberTask | Requesting 10 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:47.639+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer.
+2018-11-03 14:08:47.719+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 10 of 10 headers requested from peer.
+2018-11-03 14:08:47.726+01:00 | nioEventLoopGroup-3-1 | INFO  | AbstractMiningCoordinator | Pausing mining while behind chain head
+2018-11-03 14:08:47.727+01:00 | nioEventLoopGroup-3-1 | INFO  | Downloader | Found common ancestor with peer 0xefad3d812040e121ac... at block 3220
+2018-11-03 14:08:47.728+01:00 | nioEventLoopGroup-3-1 | DEBUG | Downloader | Requesting checkpoint headers from 3220
+2018-11-03 14:08:47.729+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 11 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:47.819+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 11 of 11 headers requested from peer.
+2018-11-03 14:08:47.819+01:00 | nioEventLoopGroup-3-1 | DEBUG | Downloader | Tracking 11 checkpoint headers
+2018-11-03 14:08:47.832+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Importing chain segment from 3220 to 3420.
+2018-11-03 14:08:47.833+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3221 to 3240
+2018-11-03 14:08:47.835+01:00 | nioEventLoopGroup-3-1 | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3221 to 3239.
+2018-11-03 14:08:47.837+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:48.019+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:48.503+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:48.896+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:49.026+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:49.127+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:49.558+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire PING
+2018-11-03 14:08:49.986+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:50.285+01:00 | vert.x-eventloop-thread-1 | INFO  | PeerDiscoveryController | Peer table refresh triggered by timer expiry
+2018-11-03 14:08:50.407+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:50.651+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Failed to connect to peer 0xa979fb575495b8d6db44f750317d0f4622bf4c2aa3365d6af7c284339968eef29b69ad0dce72a4d8db5ebb4968de0e3bec910127f134779fbcb0cb6d3331163c: java.util.concurrent.TimeoutException: Timed out waiting to establish connection with peer: 0xa979fb575495b8d6db44f750317d0f4622bf4c2aa3365d6af7c284339968eef29b69ad0dce72a4d8db5ebb4968de0e3bec910127f134779fbcb0cb6d3331163c
+2018-11-03 14:08:50.651+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 2 pending, 1 active connections.
+2018-11-03 14:08:50.713+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Failed to connect to peer 0x78de8a0916848093c73790ead81d1928bec737d565119932b98c6b100d944b7a95e94f847f689fc723399d2e31129d182f7ef3863f2b4c820abbf3ab2722344d: java.util.concurrent.TimeoutException: Timed out waiting to establish connection with peer: 0x78de8a0916848093c73790ead81d1928bec737d565119932b98c6b100d944b7a95e94f847f689fc723399d2e31129d182f7ef3863f2b4c820abbf3ab2722344d
+2018-11-03 14:08:50.713+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 1 pending, 1 active connections.
+2018-11-03 14:08:50.739+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Failed to connect to peer 0x158f8aab45f6d19c6cbf4a089c2670541a8da11978a2f90dbf6a502a4a3bab80d288afdbeb7ec0ef6d92de563767f3b1ea9e8e334ca711e9f8e2df5a0385e8e6: java.util.concurrent.TimeoutException: Timed out waiting to establish connection with peer: 0x158f8aab45f6d19c6cbf4a089c2670541a8da11978a2f90dbf6a502a4a3bab80d288afdbeb7ec0ef6d92de563767f3b1ea9e8e334ca711e9f8e2df5a0385e8e6
+2018-11-03 14:08:50.739+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 0 pending, 1 active connections.
+2018-11-03 14:08:50.967+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:51.216+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x580939823f8388a546a0b27de37e8e85... under INITIATOR role
+2018-11-03 14:08:51.223+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@666d5c3b
+2018-11-03 14:08:51.338+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /158.69.113.211:30305.
+2018-11-03 14:08:51.454+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x580939823f8388a546a0b27de37e8e85...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@32bd63a4
+2018-11-03 14:08:51.458+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:51.458+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:51.459+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:51.461+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v0.0.6-Ether1_MN_SN/linux-amd64/go1.9.2', capabilities=[eth/63, eth/62], port=0, nodeId=0x580939823f8388a546a0b27de37e8e850a8013dd56c370bd8e299800bc7d8497565ef3ac139d0c995be0df013df9468f3c012f864393532575b62feefaef2524}
+2018-11-03 14:08:51.465+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:51.471+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0x580939823f8388a546....
+2018-11-03 14:08:51.474+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0x580939823f8388a546a0b27de37e8e850a8013dd56c370bd8e299800bc7d8497565ef3ac139d0c995be0df013df9468f3c012f864393532575b62feefaef2524
+2018-11-03 14:08:51.474+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 0 pending, 2 active connections.
+2018-11-03 14:08:51.489+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xac6b1096ca56b9f6d004b779ae3728bf... under INITIATOR role
+2018-11-03 14:08:51.529+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@1d67a872
+2018-11-03 14:08:51.570+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Disconnecting from peer with mismatched network id: 1313114
+2018-11-03 14:08:51.571+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyPeerConnection | Disconnecting (SUBPROTOCOL_TRIGGERED) from PeerInfo{version=5, clientId='Geth/v0.0.6-Ether1_MN_SN/linux-amd64/go1.9.2', capabilities=[eth/63, eth/62], port=0, nodeId=0x580939823f8388a546a0b27de37e8e850a8013dd56c370bd8e299800bc7d8497565ef3ac139d0c995be0df013df9468f3c012f864393532575b62feefaef2524}
+2018-11-03 14:08:51.571+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Disconnecting from peer (SUBPROTOCOL_TRIGGERED), 1 peers left: EthPeers{connections=0xefad3d812040e121ac...}
+2018-11-03 14:08:51.583+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire DISCONNECT (SUBPROTOCOL_TRIGGERED) from peer: Geth/v0.0.6-Ether1_MN_SN/linux-amd64/go1.9.2
+2018-11-03 14:08:51.597+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:51.613+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:51.617+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:51.641+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x7421e97c2ebe7339451788cbc5e0c6f9... under INITIATOR role
+2018-11-03 14:08:51.674+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@960f073
+2018-11-03 14:08:51.675+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /35.196.119.189:51000.
+2018-11-03 14:08:51.705+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /185.186.246.28:30303.
+2018-11-03 14:08:51.724+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x84bb4007eaff728fec301701ab84ae5d... under INITIATOR role
+2018-11-03 14:08:51.739+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@1ee400ad
+2018-11-03 14:08:51.756+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x7421e97c2ebe7339451788cbc5e0c6f9...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@3ac19b3a
+2018-11-03 14:08:51.765+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:51.767+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:51.770+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:51.774+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.8.4-stable-6b54f497/linux-amd64/go1.10', capabilities=[eth/63, eth/62], port=0, nodeId=0x7421e97c2ebe7339451788cbc5e0c6f94c8fa0bbebf52a5620bd9c0caa5f261ac16a1946908b6c638d94f3f036cc72f4b1f587ba0b9868bc225aa2f1e4cea8be}
+2018-11-03 14:08:51.776+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:51.780+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0x7421e97c2ebe733945....
+2018-11-03 14:08:51.783+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0x7421e97c2ebe7339451788cbc5e0c6f94c8fa0bbebf52a5620bd9c0caa5f261ac16a1946908b6c638d94f3f036cc72f4b1f587ba0b9868bc225aa2f1e4cea8be
+2018-11-03 14:08:51.786+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 2 pending, 2 active connections.
+2018-11-03 14:08:51.803+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0xac6b1096ca56b9f6d004b779ae3728bf...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@5886ec6a
+2018-11-03 14:08:51.810+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:51.813+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:51.814+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:51.822+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.7.2-stable-d4a1b095/linux-amd64/go1.7.4', capabilities=[istanbul/64], port=0, nodeId=0xac6b1096ca56b9f6d004b779ae3728bf83f8e22453404cc3cef16a3d9b96608bc67c4b30db88e0a5a6c6390213f7acbe1153ff6d23ce57380104288ae19373ef}
+2018-11-03 14:08:51.822+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:51.827+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Disconnecting from Geth/v1.7.2-stable-d4a1b095/linux-amd64/go1.7.4 because no capabilities are shared.
+2018-11-03 14:08:51.828+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Failed to connect to peer 0xac6b1096ca56b9f6d004b779ae3728bf83f8e22453404cc3cef16a3d9b96608bc67c4b30db88e0a5a6c6390213f7acbe1153ff6d23ce57380104288ae19373ef: tech.pegasys.pantheon.ethereum.p2p.netty.exceptions.IncompatiblePeerException: No shared capabilities
+2018-11-03 14:08:51.828+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 1 pending, 2 active connections.
+2018-11-03 14:08:51.828+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyPeerConnection | Disconnecting (USELESS_PEER) from PeerInfo{version=5, clientId='Geth/v1.7.2-stable-d4a1b095/linux-amd64/go1.7.4', capabilities=[istanbul/64], port=0, nodeId=0xac6b1096ca56b9f6d004b779ae3728bf83f8e22453404cc3cef16a3d9b96608bc67c4b30db88e0a5a6c6390213f7acbe1153ff6d23ce57380104288ae19373ef}
+2018-11-03 14:08:51.829+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Disconnecting from peer with mismatched network id: 444
+2018-11-03 14:08:51.830+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyPeerConnection | Disconnecting (SUBPROTOCOL_TRIGGERED) from PeerInfo{version=5, clientId='Geth/v1.8.4-stable-6b54f497/linux-amd64/go1.10', capabilities=[eth/63, eth/62], port=0, nodeId=0x7421e97c2ebe7339451788cbc5e0c6f94c8fa0bbebf52a5620bd9c0caa5f261ac16a1946908b6c638d94f3f036cc72f4b1f587ba0b9868bc225aa2f1e4cea8be}
+2018-11-03 14:08:51.830+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Disconnecting from peer (SUBPROTOCOL_TRIGGERED), 1 peers left: EthPeers{connections=0xefad3d812040e121ac...}
+2018-11-03 14:08:51.832+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire DISCONNECT (SUBPROTOCOL_TRIGGERED) from peer: Geth/v1.8.4-stable-6b54f497/linux-amd64/go1.10
+2018-11-03 14:08:51.861+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x0a3c6ef734246eaded5fdcf505bf4391... under INITIATOR role
+2018-11-03 14:08:51.895+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@32dc0b79
+2018-11-03 14:08:51.910+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:51.950+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x11832d46dc24a2b4c3824a6cd08005b8... under INITIATOR role
+2018-11-03 14:08:51.961+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@6c93d27c
+2018-11-03 14:08:52.010+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x1356200a9c14ed1514bf0ea50d259b6a... under INITIATOR role
+2018-11-03 14:08:52.032+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@525ee0f3
+2018-11-03 14:08:52.318+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:52.372+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3221 to 3239.
+2018-11-03 14:08:52.380+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3221 to 3240
+2018-11-03 14:08:52.385+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3221.
+2018-11-03 14:08:52.391+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:52.399+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3241 to 3260
+2018-11-03 14:08:52.401+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3241 to 3259.
+2018-11-03 14:08:52.403+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:52.954+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3221 to 3240
+2018-11-03 14:08:52.957+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3221 to 3240
+2018-11-03 14:08:52.974+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:53.186+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3221 to 3240 succeeded (chunk 1/10).
+2018-11-03 14:08:53.189+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:53.208+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3241 to 3259.
+2018-11-03 14:08:53.217+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3241 to 3260
+2018-11-03 14:08:53.217+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3241.
+2018-11-03 14:08:53.218+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:53.218+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3261 to 3280
+2018-11-03 14:08:53.222+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3261 to 3279.
+2018-11-03 14:08:53.224+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:53.257+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /209.97.163.110:30303.
+2018-11-03 14:08:53.461+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3241 to 3260
+2018-11-03 14:08:53.461+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3241 to 3260
+2018-11-03 14:08:53.471+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:53.606+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3261 to 3279.
+2018-11-03 14:08:53.615+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3261 to 3280
+2018-11-03 14:08:53.617+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3261.
+2018-11-03 14:08:53.619+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:53.663+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3261 to 3280
+2018-11-03 14:08:53.739+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3241 to 3260 succeeded (chunk 2/10).
+2018-11-03 14:08:53.740+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3281 to 3300
+2018-11-03 14:08:53.740+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3281 to 3299.
+2018-11-03 14:08:53.740+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:53.743+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3261 to 3280
+2018-11-03 14:08:53.881+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x78f0338ee5d9b07599dd61f03b575df5... under INITIATOR role
+2018-11-03 14:08:53.897+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@5c474d2
+2018-11-03 14:08:53.928+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xbeaf1b357c1cb50088e5a543efefe506... under INITIATOR role
+2018-11-03 14:08:53.953+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@1681fbeb
+2018-11-03 14:08:53.961+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xe0d77956c697c4ff905a8d898a5d1d4c... under INITIATOR role
+2018-11-03 14:08:53.978+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@221e4e1e
+2018-11-03 14:08:53.992+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x89a7e17fdf28752942ca2f6eb7d1947c... under INITIATOR role
+2018-11-03 14:08:53.998+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3261 to 3280 succeeded (chunk 3/10).
+2018-11-03 14:08:54.004+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@5c7e2b32
+2018-11-03 14:08:54.006+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x19dc446fecbf79cab1d42af2bbffb83d... under INITIATOR role
+2018-11-03 14:08:54.013+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@e5fc906
+2018-11-03 14:08:54.015+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:54.110+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3281 to 3299.
+2018-11-03 14:08:54.117+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3281 to 3300
+2018-11-03 14:08:54.117+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3281.
+2018-11-03 14:08:54.118+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:54.121+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3301 to 3320
+2018-11-03 14:08:54.121+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3301 to 3319.
+2018-11-03 14:08:54.122+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:54.169+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /210.140.10.93:30303.
+2018-11-03 14:08:54.187+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /104.248.72.174:30303.
+2018-11-03 14:08:54.271+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /178.128.28.141:30303.
+2018-11-03 14:08:54.303+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3281 to 3300
+2018-11-03 14:08:54.304+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3281 to 3300
+2018-11-03 14:08:54.309+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:54.332+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /211.104.160.212:30303.
+2018-11-03 14:08:54.418+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3281 to 3300 succeeded (chunk 4/10).
+2018-11-03 14:08:54.431+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3301 to 3319.
+2018-11-03 14:08:54.436+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3301 to 3320
+2018-11-03 14:08:54.441+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3301.
+2018-11-03 14:08:54.444+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:54.445+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3321 to 3340
+2018-11-03 14:08:54.458+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3321 to 3339.
+2018-11-03 14:08:54.459+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:54.481+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3301 to 3320
+2018-11-03 14:08:54.482+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3301 to 3320
+2018-11-03 14:08:54.559+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3301 to 3320 succeeded (chunk 5/10).
+2018-11-03 14:08:54.614+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire PING
+2018-11-03 14:08:54.617+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:54.705+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3321 to 3339.
+2018-11-03 14:08:54.711+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3321 to 3340
+2018-11-03 14:08:54.711+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3321.
+2018-11-03 14:08:54.711+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:54.712+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3341 to 3360
+2018-11-03 14:08:54.713+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3341 to 3359.
+2018-11-03 14:08:54.713+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:54.923+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3321 to 3340
+2018-11-03 14:08:54.923+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3321 to 3340
+2018-11-03 14:08:54.943+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:55.051+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3321 to 3340 succeeded (chunk 6/10).
+2018-11-03 14:08:55.091+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3341 to 3359.
+2018-11-03 14:08:55.120+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3341 to 3360
+2018-11-03 14:08:55.124+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3341.
+2018-11-03 14:08:55.125+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:55.127+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xb556317d9503dfeaabb0bd5d7592d5b5... under INITIATOR role
+2018-11-03 14:08:55.140+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3361 to 3380
+2018-11-03 14:08:55.140+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3361 to 3379.
+2018-11-03 14:08:55.140+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:55.141+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@2763c64b
+2018-11-03 14:08:55.159+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3341 to 3360
+2018-11-03 14:08:55.159+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3341 to 3360
+2018-11-03 14:08:55.208+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /170.254.236.119:30303.
+2018-11-03 14:08:55.287+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3341 to 3360 succeeded (chunk 7/10).
+2018-11-03 14:08:55.309+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:55.466+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3361 to 3379.
+2018-11-03 14:08:55.475+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3361 to 3380
+2018-11-03 14:08:55.475+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3361.
+2018-11-03 14:08:55.476+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:55.477+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3381 to 3400
+2018-11-03 14:08:55.477+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3381 to 3399.
+2018-11-03 14:08:55.478+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:55.669+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3361 to 3380
+2018-11-03 14:08:55.670+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3361 to 3380
+2018-11-03 14:08:55.679+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:55.762+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3361 to 3380 succeeded (chunk 8/10).
+2018-11-03 14:08:55.785+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3381 to 3399.
+2018-11-03 14:08:55.790+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3381 to 3400
+2018-11-03 14:08:55.790+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3381.
+2018-11-03 14:08:55.791+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:55.791+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3401 to 3420
+2018-11-03 14:08:55.792+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3401 to 3419.
+2018-11-03 14:08:55.792+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:55.906+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x78f0338ee5d9b07599dd61f03b575df5...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@65759037
+2018-11-03 14:08:55.907+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:55.908+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:55.908+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:55.908+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.8.17-stable-8bbe7207/linux-amd64/go1.10', capabilities=[eth/63], port=0, nodeId=0x78f0338ee5d9b07599dd61f03b575df544cdceeab5a66163fc26f22def5b3b8484c1c31e3510ff5af79fe4d921da742dbb99c18f27ccd492c3389982b12124ac}
+2018-11-03 14:08:55.909+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:55.909+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0x78f0338ee5d9b07599....
+2018-11-03 14:08:55.910+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0x78f0338ee5d9b07599dd61f03b575df544cdceeab5a66163fc26f22def5b3b8484c1c31e3510ff5af79fe4d921da742dbb99c18f27ccd492c3389982b12124ac
+2018-11-03 14:08:55.910+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 9 pending, 2 active connections.
+2018-11-03 14:08:55.972+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3381 to 3400
+2018-11-03 14:08:55.972+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3381 to 3400
+2018-11-03 14:08:55.981+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:56.022+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3381 to 3400 succeeded (chunk 9/10).
+2018-11-03 14:08:56.022+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:08:56.066+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0xa9557521d939afca77fb9f1cf0394053... under INITIATOR role
+2018-11-03 14:08:56.073+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@7ff1bd98
+2018-11-03 14:08:56.099+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3401 to 3419.
+2018-11-03 14:08:56.106+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3401 to 3420
+2018-11-03 14:08:56.106+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3401.
+2018-11-03 14:08:56.106+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:56.147+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3401 to 3420
+2018-11-03 14:08:56.147+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3401 to 3420
+2018-11-03 14:08:56.188+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3401 to 3420 succeeded (chunk 10/10).
+2018-11-03 14:08:56.189+01:00 | EthScheduler-Workers | INFO  | PipelinedImportChainSegmentTask | Completed importing chain segment 3220 to 3420
+2018-11-03 14:08:56.190+01:00 | EthScheduler-Workers | DEBUG | Downloader | Requesting checkpoint headers from 3420
+2018-11-03 14:08:56.190+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 11 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:56.238+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from 0x78f0338ee5d9b07599...: tech.pegasys.pantheon.ethereum.eth.messages.StatusMessage@34b489cf
+2018-11-03 14:08:56.238+01:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Requesting chain head info for 0x78f0338ee5d9b07599...
+2018-11-03 14:08:56.238+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers from peer 0x78f0338ee5d9b07599....
+2018-11-03 14:08:56.267+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x58bd5d4fad266b74cd3596a04a74d8fd... under INITIATOR role
+2018-11-03 14:08:56.280+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@6ab039c1
+2018-11-03 14:08:56.291+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 11 of 11 headers requested from peer.
+2018-11-03 14:08:56.293+01:00 | nioEventLoopGroup-3-1 | DEBUG | Downloader | Tracking 11 checkpoint headers
+2018-11-03 14:08:56.294+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Importing chain segment from 3420 to 3620.
+2018-11-03 14:08:56.294+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3421 to 3440
+2018-11-03 14:08:56.295+01:00 | nioEventLoopGroup-3-1 | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3421 to 3439.
+2018-11-03 14:08:56.295+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:56.300+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Failed to connect to peer 0x58bd5d4fad266b74cd3596a04a74d8fdacfa4d2f7f78e64f60e84bf36114a0cd53c517839552e41b8ebc31aee3aea2605dc6ce8b5ef5bab0358822d6660f72c5: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /104.248.139.245:50000
+2018-11-03 14:08:56.300+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 10 pending, 2 active connections.
+2018-11-03 14:08:56.448+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:56.523+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x11832d46dc24a2b4c3824a6cd08005b8... under INITIATOR role
+2018-11-03 14:08:56.535+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@20c9b11a
+2018-11-03 14:08:56.561+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3421 to 3439.
+2018-11-03 14:08:56.567+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3421 to 3440
+2018-11-03 14:08:56.567+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3421.
+2018-11-03 14:08:56.567+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:56.568+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3441 to 3460
+2018-11-03 14:08:56.568+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3441 to 3459.
+2018-11-03 14:08:56.568+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:56.726+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer.
+2018-11-03 14:08:56.738+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3421 to 3440
+2018-11-03 14:08:56.738+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3421 to 3440
+2018-11-03 14:08:56.739+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:56.803+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3421 to 3440 succeeded (chunk 1/10).
+2018-11-03 14:08:56.822+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x89a7e17fdf28752942ca2f6eb7d1947c...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@4ad22e35
+2018-11-03 14:08:56.824+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:56.824+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:56.825+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:56.825+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.8.15-stable-89451f7c/linux-amd64/go1.10.1', capabilities=[eth/63], port=0, nodeId=0x89a7e17fdf28752942ca2f6eb7d1947cff4dfcec79ddf79859d253b60df7d0668b0b166478e26f6c11f6e48d166833a25a40b8762b17b9bd4bb3d7601191e8fa}
+2018-11-03 14:08:56.826+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:56.826+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0x89a7e17fdf28752942....
+2018-11-03 14:08:56.827+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0x89a7e17fdf28752942ca2f6eb7d1947cff4dfcec79ddf79859d253b60df7d0668b0b166478e26f6c11f6e48d166833a25a40b8762b17b9bd4bb3d7601191e8fa
+2018-11-03 14:08:56.827+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 10 pending, 3 active connections.
+2018-11-03 14:08:56.853+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3441 to 3459.
+2018-11-03 14:08:56.859+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3441 to 3460
+2018-11-03 14:08:56.860+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3441.
+2018-11-03 14:08:56.860+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0x78f0338ee5d9b07599....
+2018-11-03 14:08:56.860+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3461 to 3480
+2018-11-03 14:08:56.860+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3461 to 3479.
+2018-11-03 14:08:56.861+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x78f0338ee5d9b07599....
+2018-11-03 14:08:57.121+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x19dc446fecbf79cab1d42af2bbffb83d...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@6d2e6f80
+2018-11-03 14:08:57.123+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:57.124+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:57.124+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:57.124+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.8.17-stable-8bbe7207/linux-amd64/go1.10', capabilities=[eth/63], port=0, nodeId=0x19dc446fecbf79cab1d42af2bbffb83db6f9296d98c8ff1526a5f38a5e837dc644b21de6dce21bea3982a1c4974ce888594211314a350241a8a781ff8e9470fd}
+2018-11-03 14:08:57.125+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:57.125+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0x19dc446fecbf79cab1....
+2018-11-03 14:08:57.125+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0x19dc446fecbf79cab1d42af2bbffb83db6f9296d98c8ff1526a5f38a5e837dc644b21de6dce21bea3982a1c4974ce888594211314a350241a8a781ff8e9470fd
+2018-11-03 14:08:57.126+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 9 pending, 4 active connections.
+2018-11-03 14:08:57.230+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from 0x89a7e17fdf28752942...: tech.pegasys.pantheon.ethereum.eth.messages.StatusMessage@1c354064
+2018-11-03 14:08:57.230+01:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Requesting chain head info for 0x89a7e17fdf28752942...
+2018-11-03 14:08:57.230+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers from peer 0x89a7e17fdf28752942....
+2018-11-03 14:08:57.334+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x11832d46dc24a2b4c3824a6cd08005b8...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@e5ab98e
+2018-11-03 14:08:57.336+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:57.336+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:57.336+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:57.337+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.8.15-stable-89451f7c/linux-amd64/go1.10.1', capabilities=[eth/63], port=0, nodeId=0x11832d46dc24a2b4c3824a6cd08005b8789b98c1eea63df5ad5ee4a0a397dcf711745c708747c53c11d0f15bbaad9cc57c4823c4875da3f3e95533ff919a98b7}
+2018-11-03 14:08:57.337+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:57.338+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0x11832d46dc24a2b4c3....
+2018-11-03 14:08:57.338+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0x11832d46dc24a2b4c3824a6cd08005b8789b98c1eea63df5ad5ee4a0a397dcf711745c708747c53c11d0f15bbaad9cc57c4823c4875da3f3e95533ff919a98b7
+2018-11-03 14:08:57.338+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 8 pending, 5 active connections.
+2018-11-03 14:08:57.490+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x0a3c6ef734246eaded5fdcf505bf4391...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@3c1e3e0b
+2018-11-03 14:08:57.492+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:08:57.492+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:08:57.492+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:08:57.493+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.8.17-stable-8bbe7207/linux-amd64/go1.10', capabilities=[eth/63], port=0, nodeId=0x0a3c6ef734246eaded5fdcf505bf43915bae0645c702fbe85f9b46801f167fa0c7331eb05795c1e1a9ae59962c9590e894486d2f6b66f3d21f2c5d44c45e4e71}
+2018-11-03 14:08:57.493+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:08:57.494+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0x0a3c6ef734246eaded....
+2018-11-03 14:08:57.494+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0x0a3c6ef734246eaded5fdcf505bf43915bae0645c702fbe85f9b46801f167fa0c7331eb05795c1e1a9ae59962c9590e894486d2f6b66f3d21f2c5d44c45e4e71
+2018-11-03 14:08:57.494+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 7 pending, 6 active connections.
+2018-11-03 14:08:57.527+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from 0x19dc446fecbf79cab1...: tech.pegasys.pantheon.ethereum.eth.messages.StatusMessage@51d33188
+2018-11-03 14:08:57.528+01:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Requesting chain head info for 0x19dc446fecbf79cab1...
+2018-11-03 14:08:57.528+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers from peer 0x19dc446fecbf79cab1....
+2018-11-03 14:08:57.588+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3441 to 3460
+2018-11-03 14:08:57.588+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3441 to 3460
+2018-11-03 14:08:57.641+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3441 to 3460 succeeded (chunk 2/10).
+2018-11-03 14:08:57.657+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from 0x11832d46dc24a2b4c3...: tech.pegasys.pantheon.ethereum.eth.messages.StatusMessage@754c55dd
+2018-11-03 14:08:57.657+01:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Requesting chain head info for 0x11832d46dc24a2b4c3...
+2018-11-03 14:08:57.658+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers from peer 0x11832d46dc24a2b4c3....
+2018-11-03 14:08:57.748+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from 0x0a3c6ef734246eaded...: tech.pegasys.pantheon.ethereum.eth.messages.StatusMessage@38efc319
+2018-11-03 14:08:57.749+01:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Requesting chain head info for 0x0a3c6ef734246eaded...
+2018-11-03 14:08:57.749+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers from peer 0x0a3c6ef734246eaded....
+2018-11-03 14:08:57.818+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:57.900+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3461 to 3479.
+2018-11-03 14:08:57.906+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3461 to 3480
+2018-11-03 14:08:57.906+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3461.
+2018-11-03 14:08:57.906+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:57.907+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3481 to 3500
+2018-11-03 14:08:57.907+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3481 to 3499.
+2018-11-03 14:08:57.908+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:57.930+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer.
+2018-11-03 14:08:58.008+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer.
+2018-11-03 14:08:58.160+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3461 to 3480
+2018-11-03 14:08:58.160+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3461 to 3480
+2018-11-03 14:08:58.169+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:08:58.203+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3461 to 3480 succeeded (chunk 3/10).
+2018-11-03 14:08:58.222+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer.
+2018-11-03 14:08:58.261+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3481 to 3499.
+2018-11-03 14:08:58.266+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3481 to 3500
+2018-11-03 14:08:58.266+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3481.
+2018-11-03 14:08:58.266+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:08:58.267+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3501 to 3520
+2018-11-03 14:08:58.267+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3501 to 3519.
+2018-11-03 14:08:58.267+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x78f0338ee5d9b07599....
+2018-11-03 14:08:58.299+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3481 to 3500
+2018-11-03 14:08:58.300+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3481 to 3500
+2018-11-03 14:08:58.369+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3481 to 3500 succeeded (chunk 4/10).
+2018-11-03 14:08:59.556+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire PING
+2018-11-03 14:08:59.829+01:00 | nioEventLoopGroup-3-1 | DEBUG | HandshakeHandlerOutbound | Wrote initial crypto handshake message to /209.97.163.110:30303.
+2018-11-03 14:08:59.855+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer.
+2018-11-03 14:09:00.979+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire DISCONNECT (CLIENT_QUITTING) from peer: Geth/v1.8.17-stable-8bbe7207/linux-amd64/go1.10
+2018-11-03 14:09:00.979+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyPeerConnection | Disconnected (CLIENT_QUITTING) from PeerInfo{version=5, clientId='Geth/v1.8.17-stable-8bbe7207/linux-amd64/go1.10', capabilities=[eth/63], port=0, nodeId=0x78f0338ee5d9b07599dd61f03b575df544cdceeab5a66163fc26f22def5b3b8484c1c31e3510ff5af79fe4d921da742dbb99c18f27ccd492c3389982b12124ac}
+2018-11-03 14:09:00.979+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthPeer | Received useless response from peer 0x78f0338ee5d9b07599...
+2018-11-03 14:09:00.980+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3501 to 3519.
+2018-11-03 14:09:00.980+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Peer requested to be disconnected (CLIENT_QUITTING), 5 peers left: EthPeers{connections=0x0a3c6ef734246eaded...,0x19dc446fecbf79cab1...,0x89a7e17fdf28752942...,0xefad3d812040e121ac...,0x11832d46dc24a2b4c3...}
+2018-11-03 14:09:00.980+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x19dc446fecbf79cab1....
+2018-11-03 14:09:01.374+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Prepared ECIES handshake with node 0x446a4125ad4040eb3309654161b8a8fd... under INITIATOR role
+2018-11-03 14:09:01.384+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | First ECIES handshake message under INITIATOR role: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.InitiatorHandshakeMessageV4@133b5564
+2018-11-03 14:09:01.394+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:01.511+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:09:01.595+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3501 to 3519.
+2018-11-03 14:09:01.601+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3501 to 3520
+2018-11-03 14:09:01.601+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3501.
+2018-11-03 14:09:01.602+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:09:01.605+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3521 to 3540
+2018-11-03 14:09:01.605+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3521 to 3539.
+2018-11-03 14:09:01.606+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x19dc446fecbf79cab1....
+2018-11-03 14:09:01.771+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3501 to 3520
+2018-11-03 14:09:01.773+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3501 to 3520
+2018-11-03 14:09:01.835+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3501 to 3520 succeeded (chunk 5/10).
+2018-11-03 14:09:02.168+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:09:02.247+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3521 to 3539.
+2018-11-03 14:09:02.252+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3521 to 3540
+2018-11-03 14:09:02.252+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3521.
+2018-11-03 14:09:02.252+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:02.253+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3541 to 3560
+2018-11-03 14:09:02.253+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3541 to 3559.
+2018-11-03 14:09:02.253+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:09:02.389+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:09:02.478+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3541 to 3559.
+2018-11-03 14:09:02.604+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3521 to 3540
+2018-11-03 14:09:02.605+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3541 to 3560
+2018-11-03 14:09:02.605+01:00 | nioEventLoopGroup-3-1 | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3541.
+2018-11-03 14:09:02.605+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xefad3d812040e121ac....
+2018-11-03 14:09:02.605+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3521 to 3540
+2018-11-03 14:09:02.648+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3541 to 3560
+2018-11-03 14:09:02.670+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3521 to 3540 succeeded (chunk 6/10).
+2018-11-03 14:09:02.670+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3561 to 3580
+2018-11-03 14:09:02.670+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3561 to 3579.
+2018-11-03 14:09:02.671+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:02.671+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3541 to 3560
+2018-11-03 14:09:02.723+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3541 to 3560 succeeded (chunk 7/10).
+2018-11-03 14:09:02.886+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0x11832d46dc24a2b4c3824a6cd08005b8...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@443694c9
+2018-11-03 14:09:02.888+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:09:02.889+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Rejecting connection from already connected client 0x11832d46dc24a2b4c3824a6cd08005b8789b98c1eea63df5ad5ee4a0a397dcf711745c708747c53c11d0f15bbaad9cc57c4823c4875da3f3e95533ff919a98b7
+2018-11-03 14:09:02.890+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Failed to connect to peer 0x11832d46dc24a2b4c3824a6cd08005b8789b98c1eea63df5ad5ee4a0a397dcf711745c708747c53c11d0f15bbaad9cc57c4823c4875da3f3e95533ff919a98b7: java.lang.IllegalStateException: Client already connected
+2018-11-03 14:09:02.890+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 7 pending, 5 active connections.
+2018-11-03 14:09:03.584+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Failed to connect to peer 0xa9557521d939afca77fb9f1cf0394053e7937de333cd57dbf73b5c208729fc548695932e504ebea374005c151420f7c133af2705c202192af62b0c8ca1e4097a: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /212.64.52.184:30303
+2018-11-03 14:09:03.585+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 6 pending, 5 active connections.
+2018-11-03 14:09:03.692+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Received responder's ECIES handshake message from node 0xbeaf1b357c1cb50088e5a543efefe506...: tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@14980b8f
+2018-11-03 14:09:03.694+01:00 | nioEventLoopGroup-3-1 | DEBUG | ECIESHandshaker | Handshake status set to SUCCESS
+2018-11-03 14:09:03.694+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Sending framed hello
+2018-11-03 14:09:03.695+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractHandshakeHandler | Successfully wrote hello message
+2018-11-03 14:09:03.871+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Received HELLO message: PeerInfo{version=5, clientId='Geth/v1.8.15-stable-89451f7c/linux-amd64/go1.10', capabilities=[eth/63], port=0, nodeId=0xbeaf1b357c1cb50088e5a543efefe506b44e4b0e0d544f205bb79ea85b362ab53e1fba202f17c75465cae36cad38bcdbfd8786920c3314cfab6783812c9d9add}
+2018-11-03 14:09:03.871+01:00 | nioEventLoopGroup-3-1 | DEBUG | DeFramer | Enable compression for p2pVersion: 5
+2018-11-03 14:09:03.872+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Sending status message to 0xbeaf1b357c1cb50088....
+2018-11-03 14:09:03.872+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connection established to peer: 0xbeaf1b357c1cb50088e5a543efefe506b44e4b0e0d544f205bb79ea85b362ab53e1fba202f17c75465cae36cad38bcdbfd8786920c3314cfab6783812c9d9add
+2018-11-03 14:09:03.872+01:00 | nioEventLoopGroup-3-1 | DEBUG | NettyP2PNetwork | Connections: 5 pending, 6 active connections.
+2018-11-03 14:09:04.052+01:00 | nioEventLoopGroup-3-1 | DEBUG | EthProtocolManager | Received status message from 0xbeaf1b357c1cb50088...: tech.pegasys.pantheon.ethereum.eth.messages.StatusMessage@51b06d47
+2018-11-03 14:09:04.052+01:00 | nioEventLoopGroup-3-1 | DEBUG | ChainHeadTracker | Requesting chain head info for 0xbeaf1b357c1cb50088...
+2018-11-03 14:09:04.052+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 1 headers from peer 0xbeaf1b357c1cb50088....
+2018-11-03 14:09:04.395+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 1 of 1 headers requested from peer.
+2018-11-03 14:09:04.556+01:00 | nioEventLoopGroup-3-1 | DEBUG | ApiHandler | Received Wire PING
+2018-11-03 14:09:04.779+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:05.016+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:05.104+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:09:05.137+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:05.149+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:05.182+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3561 to 3579.
+2018-11-03 14:09:05.187+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3561 to 3580
+2018-11-03 14:09:05.187+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3561.
+2018-11-03 14:09:05.188+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:05.188+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3581 to 3600
+2018-11-03 14:09:05.188+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3581 to 3599.
+2018-11-03 14:09:05.189+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:05.207+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:05.525+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3561 to 3580
+2018-11-03 14:09:05.525+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3561 to 3580
+2018-11-03 14:09:05.529+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:09:05.594+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3561 to 3580 succeeded (chunk 8/10).
+2018-11-03 14:09:05.627+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3581 to 3599.
+2018-11-03 14:09:05.632+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3581 to 3600
+2018-11-03 14:09:05.632+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3581.
+2018-11-03 14:09:05.632+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:05.633+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3601 to 3620
+2018-11-03 14:09:05.633+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3601 to 3619.
+2018-11-03 14:09:05.633+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:05.986+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3581 to 3600
+2018-11-03 14:09:05.986+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3581 to 3600
+2018-11-03 14:09:06.002+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:09:06.026+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3581 to 3600 succeeded (chunk 9/10).
+2018-11-03 14:09:06.044+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:06.088+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3601 to 3619.
+2018-11-03 14:09:06.093+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3601 to 3620
+2018-11-03 14:09:06.093+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3601.
+2018-11-03 14:09:06.094+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:06.156+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:06.157+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:06.157+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:06.157+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:06.484+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3601 to 3620
+2018-11-03 14:09:06.485+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3601 to 3620
+2018-11-03 14:09:06.541+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3601 to 3620 succeeded (chunk 10/10).
+2018-11-03 14:09:06.541+01:00 | EthScheduler-Workers | INFO  | PipelinedImportChainSegmentTask | Completed importing chain segment 3420 to 3620
+2018-11-03 14:09:06.542+01:00 | EthScheduler-Workers | DEBUG | Downloader | Requesting checkpoint headers from 3620
+2018-11-03 14:09:06.542+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 11 headers from peer 0xefad3d812040e121ac....
+2018-11-03 14:09:06.692+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 11 of 11 headers requested from peer.
+2018-11-03 14:09:06.693+01:00 | nioEventLoopGroup-3-1 | DEBUG | Downloader | Tracking 11 checkpoint headers
+2018-11-03 14:09:06.693+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Importing chain segment from 3620 to 3820.
+2018-11-03 14:09:06.693+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3621 to 3640
+2018-11-03 14:09:06.694+01:00 | nioEventLoopGroup-3-1 | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3621 to 3639.
+2018-11-03 14:09:06.694+01:00 | nioEventLoopGroup-3-1 | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:06.700+01:00 | EthScheduler-Workers | DEBUG | TransactionsMessageProcessor | Received transactions message from 0xefad3d812040e121ac...
+2018-11-03 14:09:07.049+01:00 | nioEventLoopGroup-3-1 | DEBUG | AbstractGetHeadersFromPeerTask | Received 20 of 20 headers requested from peer.
+2018-11-03 14:09:07.135+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Finished downloading headers from 3621 to 3639.
+2018-11-03 14:09:07.141+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading bodies 3621 to 3640
+2018-11-03 14:09:07.142+01:00 | EthScheduler-Workers | DEBUG | CompleteBlocksTask | Requesting bodies to complete 20 blocks, starting with 3621.
+2018-11-03 14:09:07.142+01:00 | EthScheduler-Workers | DEBUG | GetBodiesFromPeerTask | Requesting 20 bodies from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:07.142+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Downloading headers 3641 to 3660
+2018-11-03 14:09:07.143+01:00 | EthScheduler-Workers | DEBUG | DownloadHeaderSequenceTask | Downloading headers from 3641 to 3659.
+2018-11-03 14:09:07.143+01:00 | EthScheduler-Workers | DEBUG | GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x89a7e17fdf28752942....
+2018-11-03 14:09:07.480+01:00 | nioEventLoopGroup-3-1 | DEBUG | PipelinedImportChainSegmentTask | Extracting sender 3621 to 3640
+2018-11-03 14:09:07.481+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Validating and importing 3621 to 3640
+2018-11-03 14:09:07.529+01:00 | EthScheduler-Workers | DEBUG | PipelinedImportChainSegmentTask | Import chain segment from 3621 to 3640 succeeded (chunk 1/10).
