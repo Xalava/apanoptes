@@ -1,6 +1,6 @@
 const RPCServer = "http://127.0.0.1:8545"
 const NodeServer = "";
-const REFRESHRATE = 2000;
+const REFRESHRATE = 4000;
 
 
 
@@ -54,17 +54,23 @@ $(function() {
         // id: "0xe731e22173dda8f432fabba68365aa2e11d656ad9e64d0fafdbbcbadc566f477acc6ef5ae24be8ed481e09774651a7cbd87b7bfed61ab22c15b8c9d712e85369"
         // name: "Geth/v1.8.15-stable-89451f7c/linux-amd64/go1.10"
         // network:
-        // localAddress: "10.2.22.100:43542"
-        // remoteAddress: "172.104.181.138:30303"
+          // localAddress: "10.2.22.100:43542"
+          // remoteAddress: "172.104.181.138:30303"
         // __proto__: Object
         // port: "0x0"
         // version: "0x5"
         // __proto__: Object
 
-        
+        $('#adminpeers').html("");
         for (let i = 0; i < data.result.length; i++) {
           const peer = data.result[i];
-          $('#adminpeers').append('<li class="list-group-item">' + peer.id.substring(0, 10)+ '</li>')
+          $('#adminpeers')
+            .append('<li class="list-group-item">' +
+            '<p>' + peer.id.substr(0,30)+ '...</p>' +
+            '<p> <i>' + peer.name+ '</i></p>' +
+            '<small> Network : ← '+ peer.network.localAddress + ' - ↑ ' + peer.network.remoteAddress+ '</small>'+
+
+          '</li>')
         }
       },
       type: 'POST'
