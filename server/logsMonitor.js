@@ -94,6 +94,7 @@ const restartImage = async ({port, host, name, logLevel}) => {
 io.on('connection', (socket) => {
   console.log(`client connected ${socket.client.id}`);
   socket.on('tail', (data) => {
+    console.log("DATA", data)
     socket.join(data.service);
     restartImage({name: data.service})
       .then(() => {

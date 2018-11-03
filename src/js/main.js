@@ -1,14 +1,15 @@
+const AdminServer ="localhost:3005"
 const RPCServer = "http://127.0.0.1:8545"
-const NodeServer = "";
 const REFRESHRATE = 4000;
-
+const serverSocket = io('ws://'+ AdminServer);
 
 
 
 $(function() {
   var web3 = new Web3(Web3.givenProvider || RPCServer );
-  console.log("WEB3 is here ! : ",web3)
-  const logs = new WebSocket("ws://SERVER.com/socketserver", "protocolOne")
+  console.log("Web3 is provided by ", web3.currentProvider.host)
+  
+
   
   function getNetworkData(){
     web3.eth.net.getId()
@@ -24,32 +25,17 @@ $(function() {
         $( "#lastblock" ).html( res );
       }
     );
-    
-    // $.get( RPCServer, {"jsonrpc":"2.0","method":"admin_peers","params":[],"id":53}, function( data ) {
-    //   $( "#adminpeers" ).html( data );
-    //   console.log(data)
-    // });
-      
+         
     $.ajax({
       url: RPCServer,
-      data: '{"jsonrpc":"2.0","method":"admin_peers","params":[],"id":53}',
-
-      // data: {
-      //    jsonrpc: '2.0',
-      //    method: 'admin_peers',
-      //    params: [],
-      //    id:53
-
-      // },
+      data: '{"jsonrpc":"2.0","method":"admin_peers","params":[],"id":99}',
       error: function() {
-        //  $('#info').html('<p>An error has occurred</p>');
-        console.log("ERROR")
+        console.log("Get Admin Peers Failed")
       },
-      // dataType: 'jsonp',
       processData: false,
-
       success: function(data) {
         console.log(data)
+        // Return
         // caps: ["eth/63"]
         // id: "0xe731e22173dda8f432fabba68365aa2e11d656ad9e64d0fafdbbcbadc566f477acc6ef5ae24be8ed481e09774651a7cbd87b7bfed61ab22c15b8c9d712e85369"
         // name: "Geth/v1.8.15-stable-89451f7c/linux-amd64/go1.10"
@@ -59,14 +45,12 @@ $(function() {
         // __proto__: Object
         // port: "0x0"
         // version: "0x5"
-        // __proto__: Object
-
         $('#adminpeers').html("");
         for (let i = 0; i < data.result.length; i++) {
           const peer = data.result[i];
           $('#adminpeers')
             .append('<li class="list-group-item">' +
-            '<p>' + peer.id.substr(0,30)+ '...</p>' +
+            '<p>' + peer.id.substr(0,40)+ '...  <span class="badge badge-secondary pull-right">'+ peer.caps[0]+ '</span></p>' +
             '<p> <i>' + peer.name+ '</i></p>' +
             '<small> Network : ← '+ peer.network.localAddress + ' - ↑ ' + peer.network.remoteAddress+ '</small>'+
 
@@ -74,7 +58,48 @@ $(function() {
         }
       },
       type: 'POST'
-   });
+    });
+
+    $.ajax({
+      url: RPCServer,
+      data: '{"jsonrpc":"2.0","method":"net_listening","params":[],"id":101',
+      error: function() {
+        console.log("RPC failed", this.data)
+      },
+      processData: false,
+      success: function(data) {
+        $('#netlistening').html(data.result)
+      },
+      type: 'POST'
+    });
+
+    $.ajax({
+      url: RPCServer,
+      data: '{"jsonrpc":"2.0","method":"net_version","params":[],"id":102',
+      error: function() {
+        console.log("RPC failed",  this.data)
+      },
+      processData: false,
+      success: function(data) {
+        $('#chainid').html(data.result)
+      },
+      type: 'POST'
+    });
+
+    $.ajax({
+      url: RPCServer,
+      data: '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":103',
+      error: function() {
+        console.log("RPC failed", this.data)
+      },
+      processData: false,
+      success: function(data) {
+        $('#clientversion').html(data.result)
+      },
+      type: 'POST'
+    });
+
+    
 
 
     
@@ -90,26 +115,32 @@ $(function() {
 
   var networkDataLoop = setInterval(getNetworkData, REFRESHRATE);
 
- 
+  serverSocket.emit('tail', {service: "1233", logLevel: "debug"});
 
-  if (NodeServer) {
-    var socket = io(WSServer);
-      socket.emit('tail', {test: "1233"});
-      socket.on('newLine', function(msg){
-        $('#messages').append($('<li>').text(msg.line));
-    });
-  } else {
-    console.log("No logs Server")
-  }
+  serverSocket.on('newLine', function(msg){
+    console.log("New Line",msg)
+    $('#messages').append($('<li>').text(msg.line));
+  });
+  serverSocket.emit('info', {}, function (data) {
+    // Return
+    // arch: "x64"
+    // cpus: Array(4) .model .speed
+    // freemem: 1410928640
+    // hostname: "k"
+    // loadavg: (3) [0.3271484375, 0.3291015625, 0.4013671875]
+    // platform: "linux"
+    // totalmem: 6964310016
+    // uptime: 6112
+    $('#infoArch').html(data.arch)
+    $('#infoCPU').html(data.cpus.length+ " cores ( "+ data.cpus[0].model + " )")
+    $('#infoHostname').html(data.hostname)
+    $('#infoLoadavg').html(data.loadavg[2])
+    $('#infoPlatform').html(data.platform)
+    $('#infoUptime').html(data.uptime)
+    var mempercent = (data.totalmem - data.freemem)/data.freemem
+    $('#infoMemory').css('width', mempercent +'%').attr('aria-valuenow', mempercent); 
 
-  
+    console.log('Retrieved System Info', data)
+  })
+
 });  
-
-
-// var socket = io();
-//   socket.emit('tail', {test: "1233"});
-//   socket.on('newLine', function(msg){
-//     $('#messages').append($('<li>').text(msg.line));
-// });
-
-
