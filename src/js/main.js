@@ -1,5 +1,5 @@
 const RPCServer = "http://127.0.0.1:8545"
-const WSServer = "";
+const NodeServer = "";
 
 $(function() {
   var web3 = new Web3(Web3.givenProvider || RPCServer );
@@ -28,7 +28,7 @@ $(function() {
     }
   );
 
-  if (WSServer) {
+  if (NodeServer) {
     var socket = io(WSServer);
       socket.emit('tail', {test: "1233"});
       socket.on('newLine', function(msg){
