@@ -223,7 +223,13 @@
 
         <section>
           <h3>Peers</h3>
-          <div class="ct-chart .ct-square	"></div>
+          <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#peerData">
+            Metrics
+          </button>
+            
+
+
+          <div class="ct-chart .ct-square	" id="peersNumber"></div>
           <ul class="text-white bg-dark list-group" id="adminpeers"></ul>
           <!-- <p </p> -->
         </section>
@@ -270,8 +276,30 @@
     </main>
     <br /><br /><br />
     <div class="row" style="text-align:center;padding:20px"><img src="apanoptes-logo.png"/></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="peerData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Number of Connections by Peer</h4>
+          </div>
+          <div class="modal-body">
+              <div class="ct-chart" id="peersMetrics"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
   </div> <!-- / global container -->
 
+
+
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
@@ -287,6 +315,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+
+
 
 </body>
 

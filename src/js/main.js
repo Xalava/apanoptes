@@ -5,7 +5,10 @@ const serverSocket = io('ws://' + AdminServer)
 
 // Chart Utilities
 let peersCount = [0]
+let peersHistory = {id :[], connections: []}
 var peersChart
+var peersMetricsChart
+
 const date = new Date()
 const initialTimestamp = date.getTime()
 const chartOptions = {}
@@ -55,9 +58,26 @@ $(function () {
         // __proto__: Object
         // port: "0x0"
         // version: "0x5"
+        // peersHistory.push(data.result)
+        // let nodes= []
+        // l
+
+
+        // for (let i = 0; i < peersHistory.length; i++) {
+        //   nodes.push
+        //   const element = array[i];
+          
+        // }
+        // console.log(peersCount)
+        // peersMetricsChart.update({
+        //   labels: [],
+        //   series: [
+        //     [0,3,4]
+        //   ]
+        // })
         $('#adminpeers').html("")
         for (let i = 0; i < data.result.length; i++) {
-          const peer = data.result[i];
+          const peer = data.result[i]
           $('#adminpeers')
             .append('<li class="list-group-item">' +
               '<p>' + peer.id.substr(0, 40) + '...  <span class="badge badge-secondary pull-right">' + peer.caps[0] + '<i> ' + peer.name + '</i>' +'</span></p>' +
@@ -65,6 +85,20 @@ $(function () {
               '<small> Network : ← ' + peer.network.localAddress + ' - ↑ ' + peer.network.remoteAddress + '</small>' +
 
               '</li>')
+          let idx = peersHistory.id.findIndex(fruit => fruit === peer.id)
+          if (idx == -1) {
+            peersHistory.id.push(peer.id)
+            peersHistory.connections.push(0)
+          } else {
+            peersHistory.connections[idx] += 1
+          }
+          console.log("PEERS HISTORY", peersHistory)
+          peersMetricsChart.update({
+          labels: peersHistory.id,
+          series: [
+            peersHistory.connections
+          ]
+          })
         }
       },
       type: 'POST'
@@ -78,7 +112,7 @@ $(function () {
       },
       processData: false,
       success: function (data) {
-        console.log("listing", data)
+        // console.log("listening", data)
         $('#netlistening').html(data.result)
       },
       type: 'POST'
@@ -92,7 +126,7 @@ $(function () {
       },
       processData: false,
       success: function (data) {
-        console.log("nvtverison", data)
+        // console.log("nvtverison", data)
         $('#chainid').html(data.result)
       },
       type: 'POST'
@@ -166,6 +200,8 @@ $(function () {
       // 4: "JSON-RPC request -> net_peerCount"
       if (msg.parsed[1]) {
         logs.push(msg.parsed)
+
+
         var currentDate = Math.floor(( Date.parse(msg.parsed[0])- initialTimestamp )/1000)
   
         var publishLine =  '<td>' + currentDate + '</td> '+ '<td>'+ msg.parsed[1]+ '</td> <td>' + msg.parsed[3]+ ' ' + msg.parsed[4] + '</td>'
@@ -212,12 +248,27 @@ $(function () {
   })
 
 
-  peersChart = new Chartist.Line('.ct-chart', {
+  peersChart = new Chartist.Line('#peersNumber', {
     labels: [],
     series: [
       peersCount
     ]
   }, chartOptions)
+
+  peersMetricsChart = new Chartist.Bar('#peersMetrics', {
+    labels: [0],
+    series: [
+      [0]
+    ]
+    },  {
+      seriesBarDistance: 10,
+      reverseData: true,
+      horizontalBars: true,
+      axisY: {
+        offset: 0
+      }
+    }
+  )
 
 })
 
