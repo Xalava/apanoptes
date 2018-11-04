@@ -9,6 +9,8 @@ var peersChart
 const date = new Date()
 const initialTimestamp = date.getTime()
 const chartOptions = {}
+let logLevel = "OFF" // DEBUG or OFF
+let logs = []
 
 $(function () {
   var web3 = new Web3(Web3.givenProvider || RPCServer)
@@ -58,7 +60,7 @@ $(function () {
           const peer = data.result[i];
           $('#adminpeers')
             .append('<li class="list-group-item">' +
-              '<p>' + peer.id.substr(0, 40) + '...  <span class="badge badge-secondary pull-right">' + peer.caps[0] + '<i>' + peer.name + '</i>' +'</span></p>' +
+              '<p>' + peer.id.substr(0, 40) + '...  <span class="badge badge-secondary pull-right">' + peer.caps[0] + '<i> &nsbp;' + peer.name + '</i>' +'</span></p>' +
               // '<p> <i>' + peer.name + '</i></p>' +
               '<small> Network : ← ' + peer.network.localAddress + ' - ↑ ' + peer.network.remoteAddress + '</small>' +
 
@@ -155,7 +157,34 @@ $(function () {
 
   serverSocket.on('newLine', function (msg) {
     console.log("New Line", msg)
-    $('#consoleLogs').append($('<tr>').text(msg.line))
+    // line 
+    // parsed: Array(5)
+      // 0: "2018-11-04 10:31:49.517+00:00"
+      // 1: "vert.x-worker-thread-18"
+      // 2: "DEBUG"
+      // 3: "JsonRpcHttpService"
+      // 4: "JSON-RPC request -> net_peerCount"
+      if (msg.parsed[1]) {
+        logs.push(msg.parsed)
+        var currentDate = Math.floor(( Date.parse(msg.parsed[0])- initialTimestamp )/1000)
+  
+        var publishLine =  '<td>' + currentDate + '</td> <td>' + '<td>'+ msg.parsed[2]+ msg.parsed[1]+ '</td> <td>' + msg.parsed[3]+ ' ' + msg.parsed[4] + '</td>'
+        if (msg.parsed[2] == "DEBUG" ) {
+          if (logLevel == "DEBUG")
+            $('#consoleLogs').append($('<tr>').html(publishLine).addClass('warning'))
+        } else if (msg.parsed[2] == "INFO")
+          $('#consoleLogs').append($('<tr>').html(publishLine).addClass('info'))
+        else
+          $('#consoleLogs').append($('<tr>').html(publishLine).addClass(''))
+                   
+  
+      $( "#consoleLogs" ).remove( "tr" )
+
+      }
+
+
+
+
   })
 
   serverSocket.emit('info', {}, function (data) {
@@ -187,5 +216,24 @@ $(function () {
       peersCount
     ]
   }, chartOptions)
+
+})
+
+
+
+
+
+$('#logs-debug').click(function() {
+  logLevel = "DEBUG"
+  $(this).toggleClass('active')
+  $('#logs-off').toggleClass('active')
+  console.log("LOG LEVEL DEBUG")
+})
+
+$('#logs-off').click(function() {
+  logLevel = "OFF" 
+  $(this).toggleClass('active')
+  $('#logs-debug').toggleClass('active')
+  console.log("LOG LEVEL OFF")
 
 })
