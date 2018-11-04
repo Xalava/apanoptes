@@ -146,16 +146,18 @@ $(function () {
   }
 
   var networkDataLoop = setInterval(getNetworkData, REFRESHRATE)
-
+  //SOCKET interface
   serverSocket.emit('tail', {
+    test:"123",
     service: "1233",
     logLevel: "debug"
   })
 
   serverSocket.on('newLine', function (msg) {
     console.log("New Line", msg)
-    $('#messages').append($('<li>').text(msg.line))
+    $('#consoleLogs').append($('<tr>').text(msg.line))
   })
+
   serverSocket.emit('info', {}, function (data) {
     // Return
     // arch: "x64"
@@ -182,7 +184,7 @@ $(function () {
   peersChart = new Chartist.Line('.ct-chart', {
     labels: [],
     series: [
-      [0, 0, 0]
+      peersCount
     ]
   }, chartOptions)
 
