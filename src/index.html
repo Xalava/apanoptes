@@ -126,22 +126,6 @@
                   <td>Client version:</td>
                   <td><span id="clientversion"></span></td>
                 </tr>
-                <!-- <tr>
-                  <td>Latency:</td>
-                  <td>0.5 ms</td>
-                </tr>
-                <tr>
-                  <td>Peers:</td>
-                  <td>123</td>
-                </tr>
-                <tr>
-                  <td>Log level:</td>
-                  <td>INFO</td>
-                </tr>
-                <tr>
-                  <td>Start time:</td>
-                  <td>2018-11-03 11:05:32.354+00:00</td>
-                </tr> -->
                 <tr>
                   <td>Listening</td>
                   <td><span id="netlistening"></span></td>
@@ -261,16 +245,16 @@
             </div>
           </div>
 
-          <div style="height:300px; overflow-y:scroll;overflow-x:hidden">
+          <div >
             <table class="table table-hover">
               <thead>
                   <tr>
-                    <th >Time (s)</th>
+                    <th >Time<small>(s)</small></th>
                     <th >Source</th>
                     <th >Data</th>
                   </tr>
                 </thead>
-              <tbody id="consoleLogs">
+              <tbody id="consoleLogs" style="height:300px; overflow-y:scroll;overflow-x:hidden; word-wrap: break-word">
               </tbody>
             </table>
           </div>
