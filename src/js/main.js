@@ -167,13 +167,8 @@ $(function () {
       if (msg.parsed[1]) {
         logs.push(msg.parsed)
         var currentDate = Math.floor(( Date.parse(msg.parsed[0])- initialTimestamp )/1000)
-<<<<<<< HEAD
   
         var publishLine =  '<td>' + currentDate + '</td> '+ '<td>'+ msg.parsed[1]+ '</td> <td>' + msg.parsed[3]+ ' ' + msg.parsed[4] + '</td>'
-=======
-
-        var publishLine =  '<td>' + currentDate + '</td> <td>' + '<td>'+ msg.parsed[1]+ '</td> <td>' + msg.parsed[3]+ ' ' + msg.parsed[4] + '</td>'
->>>>>>> 4c756055fefb22d9666f4cb3321aaf2acb4e74d3
         if (msg.parsed[2] == "DEBUG" ) {
           if (logLevel == "DEBUG")
             $('#consoleLogs').append($('<tr>').html(publishLine).addClass('warning'))
