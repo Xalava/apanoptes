@@ -156,7 +156,7 @@ $(function () {
   })
 
   serverSocket.on('newLine', function (msg) {
-    console.log("New Line", msg)
+    // console.log("New Line", msg)
     // line 
     // parsed: Array(5)
       // 0: "2018-11-04 10:31:49.517+00:00"
@@ -168,7 +168,7 @@ $(function () {
         logs.push(msg.parsed)
         var currentDate = Math.floor(( Date.parse(msg.parsed[0])- initialTimestamp )/1000)
   
-        var publishLine =  '<td>' + currentDate + '</td> <td>' + '<td>'+ msg.parsed[2]+ msg.parsed[1]+ '</td> <td>' + msg.parsed[3]+ ' ' + msg.parsed[4] + '</td>'
+        var publishLine =  '<td>' + currentDate + '</td> <td>' + '<td>'+ msg.parsed[1]+ '</td> <td>' + msg.parsed[3]+ ' ' + msg.parsed[4] + '</td>'
         if (msg.parsed[2] == "DEBUG" ) {
           if (logLevel == "DEBUG")
             $('#consoleLogs').append($('<tr>').html(publishLine).addClass('warning'))
@@ -177,14 +177,16 @@ $(function () {
         else
           $('#consoleLogs').append($('<tr>').html(publishLine).addClass(''))
                    
-  
-      $( "#consoleLogs" ).remove( "tr" )
+          
+        $('#consoleLogs').parent().parent().animate({scrollTop: $('#consoleLogs').prop("scrollHeight")}, 100);
+      // $( "#consoleLogs" ).remove( "tr" )
 
       }
 
 
 
 
+    // $('#consoleLogs').append($('<tr>').text(msg.line));
   })
 
   serverSocket.emit('info', {}, function (data) {
