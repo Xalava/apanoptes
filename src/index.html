@@ -101,9 +101,9 @@
 
           <h3>Node  <small id="nodeID"></small>  <span class="label label-success hidden" id="connection">Connected</span>
             <div class="btn-toolbar pull-right">
-              <button type="button" class="btn btn-primary " onclick="Restart">Restart</button>
-              <button type="button" class="btn btn-success" onclick="Launch">Launch</button>
-              <button type="button" class="btn btn-danger" onclick="Stop">Stop</button>
+              <button type="button" class="btn btn-primary " id="restartNode">Restart</button>
+              <!-- <button type="button" class="btn btn-success" id="launch">Launch</button> -->
+              <button type="button" class="btn btn-danger" id="stopNode">Stop</button>
 
             </div>
           </h3>
@@ -245,7 +245,7 @@
         </section>
         <section>
           <h3>Logs</h3>
-          <ul id="messages"></ul>
+          <!-- <ul id="messages"></ul> -->
           <!-- <h4>Loglevel: WARN</h4>
           <h4>
             <input style="checkbox" type="checkbox" checked> live mode<br />
@@ -254,59 +254,23 @@
           <!-- <p class="text-white bg-dark" id="console">#CONSOLE
                             <ul id="messages"></ul>
                         </p> -->
+          <div class="row">
+            <div class="btn-group btn-toggle pull-right"> 
+              <button class="btn btn-sm btn-warning" id="logs-debug">DEBUG</button>
+              <button class="btn btn-sm btn-light active" id="logs-off">basic</button>
+            </div>
+          </div>
 
-        <div class="btn-group btn-toggle"> 
-          <button class="btn btn-sm btn-warning" id="logs-debug">DEBUG</button>
-          <button class="btn btn-sm btn-light active" id="logs-off">basic</button>
-        </div>
           <div style="height:300px; overflow-y:scroll;overflow-x:hidden">
             <table class="table table-hover">
+              <thead>
+                  <tr>
+                    <th >Time (s)</th>
+                    <th >Source</th>
+                    <th >Data</th>
+                  </tr>
+                </thead>
               <tbody id="consoleLogs">
-                <!-- <tr class="warning">
-                  <td>2018-11-03 15:24:22.836+00:00</td>
-                  <td>nioEventLoopGroup-3-1</td>
-                  <td>DEBUG</td>
-                  <td>ECIESHandshaker</td>
-                  <td>Received responder's ECIES handshake message from node 0x158f8aab45f6d19c6cbf4a089c267054...:
-                    tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@359cd545</td>
-                </tr>
-                <tr class="info">
-                  <td>2018-11-03 15:28:22.442+00:00</td>
-                  <td>EthSchedulerTimer</td>
-                  <td>INFO</td>
-                  <td>WaitForPeerTask</td>
-                  <td>Waiting for new peer connection. 1 peers currently connected, Some peers idle.</td>
-                </tr>
-                <tr class="danger">
-                  <td>2018-11-03 15:24:22.836+00:00</td>
-                  <td>nioEventLoopGroup-3-1</td>
-                  <td>ERROR</td>
-                  <td>ECIESHandshaker</td>
-                  <td>Received responder's ECIES handshake message from node 0x158f8aab45f6d19c6cbf4a089c267054...:
-                    tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@359cd545</td>
-                </tr>
-                <tr>
-                  <td>2018-11-03 15:28:22.442+00:00</td>
-                  <td>EthSchedulerTimer</td>
-                  <td>INFO</td>
-                  <td>WaitForPeerTask</td>
-                  <td>Waiting for new peer connection. 1 peers currently connected, Some peers idle.</td>
-                </tr>
-                <tr>
-                  <td>2018-11-03 15:24:22.836+00:00</td>
-                  <td>nioEventLoopGroup-3-1</td>
-                  <td>DEBUG</td>
-                  <td>ECIESHandshaker</td>
-                  <td>Received responder's ECIES handshake message from node 0x158f8aab45f6d19c6cbf4a089c267054...:
-                    tech.pegasys.pantheon.ethereum.p2p.rlpx.handshake.ecies.ResponderHandshakeMessageV4@359cd545</td>
-                </tr>
-                <tr>
-                  <td>2018-11-03 15:28:22.442+00:00</td>
-                  <td>EthSchedulerTimer</td>
-                  <td>INFO</td>
-                  <td>WaitForPeerTask</td>
-                  <td>Waiting for new peer connection. 1 peers currently connected, Some peers idle.</td>
-                </tr> -->
               </tbody>
             </table>
           </div>
