@@ -178,8 +178,8 @@ $(function () {
           $('#consoleLogs').append($('<tr>').html(publishLine).addClass(''))
 
 
-        $('#consoleLogs').parent().animate({scrollTop: $('#consoleLogs').prop("scrollHeight")}, 0);
-      // $( "#consoleLogs" ).remove( "tr" )
+        // if($("#auto-scroll").prop('checked') ) 
+          $('#consoleLogs').parent().animate({scrollTop: $('#consoleLogs').prop("scrollHeight")}, 0);
 
       }
 
