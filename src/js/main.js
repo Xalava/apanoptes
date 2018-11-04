@@ -58,8 +58,8 @@ $(function () {
           const peer = data.result[i];
           $('#adminpeers')
             .append('<li class="list-group-item">' +
-              '<p>' + peer.id.substr(0, 40) + '...  <span class="badge badge-secondary pull-right">' + peer.caps[0] + '</span></p>' +
-              '<p> <i>' + peer.name + '</i></p>' +
+              '<p>' + peer.id.substr(0, 40) + '...  <span class="badge badge-secondary pull-right">' + peer.caps[0] + '<i>' + peer.name + '</i>' +'</span></p>' +
+              // '<p> <i>' + peer.name + '</i></p>' +
               '<small> Network : ← ' + peer.network.localAddress + ' - ↑ ' + peer.network.remoteAddress + '</small>' +
 
               '</li>')
