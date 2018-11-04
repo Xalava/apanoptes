@@ -18,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
       var socket = io();
-      //socket.emit('tail', {test: "1233", logLevel: "OFF"});
+      socket.emit('tail', {test: "1233", logLevel: "INFO", service:"test"});
       socket.on('newLine', function(msg){
         $('#messages').append($('<li>').text(msg.line));
       });
