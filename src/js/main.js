@@ -155,7 +155,8 @@ $(function () {
 
   serverSocket.on('newLine', function (msg) {
     console.log("New Line", msg)
-    $('#consoleLogs').append($('<tr>').text(msg.line))
+    $('#consoleLogs').append($('<tr>').text(msg.line));
+    $('#consoleLogs').parent().parent().animate({scrollTop: $('#consoleLogs').prop("scrollHeight")}, 100);
   })
 
   serverSocket.emit('info', {}, function (data) {
