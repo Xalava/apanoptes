@@ -2,7 +2,7 @@
 Argus Panoptes: Watches and Control Pantheon Nodes
 
 ## Prerequisites
-- Docker
+- Docker > 17.03
 - Nodejs > 8.0
 - Git
 
