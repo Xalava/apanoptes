@@ -34,6 +34,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 })
 
+/**
+ * Get network status.
+ * @param {string} ip - Node IP address
+ * @param {string} port - Node port
+ */
 app.get('/:id/status', function (req, res) {
   const rpcHelper = new helpers.rpcHepler();
   rpcHelper
@@ -44,9 +49,11 @@ app.get('/:id/status', function (req, res) {
     .catch(error => {
       return res.status(error.code || 500).json(error);
     })
-
-  //res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+/**
+ * Get machine info endpoint.
+ */
 app.get('/info', function (req, res) {
   const infoHelper = new helpers.infoHepler();
   infoHelper
@@ -56,13 +63,15 @@ app.get('/info', function (req, res) {
     })
     .catch(error => {
       return res.status(error.code || 500).json(error);
-    })
-
-  //res.sendFile(path.join(__dirname, 'index.html'));
+    });
 });
 
-var tails = {};
+let tails = {};
 
+/**
+ * Stop docker image.
+ * @param {string} name - The docker image name.
+ */
 const stopImage = async (name) => {
   return new Promise((fulfill, reject) => {
     exec(`docker stop ${name}`, (err, stdout, stderr) => {
@@ -75,6 +84,11 @@ const stopImage = async (name) => {
 
   });
 };
+
+/**
+ * Remove docker image.
+ * @param {string} name - The docker image name.
+ */
 const rmImage = async (name) => {
   return new Promise((fulfill, reject) => {
     exec(`docker rm ${name}`, (err, stdout, stderr) => {
@@ -88,6 +102,10 @@ const rmImage = async (name) => {
   });
 };
 
+/**
+ * Restart docker image(stop, remove).
+ * @param {string} name - The docker image name.
+ */
 const restartImage = async ({port, host, name, logLevel}) => {
   try {
     if (!Object.keys(tails).length) return true;
@@ -103,10 +121,9 @@ io.on('connection', (socket) => {
   socket.on('tail', (data) => {
     console.log("Event tail. params:", data)
     socket.join(data.service);
-      restartImage({name: data.service})
+    restartImage({name: data.service})
       .then(() => {
-        //if (typeof tails[data.service] == "undefined") {
-        tails[data.service] = spawn('docker', ['run', '--name', data.service, '-p', '8545:8545', '-p', '13001:30303', 'pegasyseng/pantheon:latest', '--rpc-enabled', `--logging=${data.logLevel}`],
+        tails[data.service] = spawn('docker', ['run', '--name', data.service, '-p', '8545:8545', '-p', '13001:30303', 'pegasyseng/pantheon:latest', '--rpc-enabled', '--rpc-cors-origins "all"',`--logging=${data.logLevel}`],
           {
             shell: true
           });
@@ -119,23 +136,29 @@ io.on('connection', (socket) => {
             parsed: data.toString().split('|').map(str => str.trim())
           });
         });
-        // }
       })
       .catch(err => {
         console.error('restart image error', err)
       });
-
   });
+
+  /**
+   * Stop docker image.
+   * @param {string} service - The docker image name.
+   */
   socket.on('tail_stop', (data) => {
     restartImage({name: data.service})
       .then(() => {
         console.log('logs stopped');
       })
       .catch(err => {
-        console.error('errrrrr', err)
-      })
-
+        console.error('restart image error', err)
+      });
   });
+
+  /**
+   * Get machine info via WS.
+   */
   socket.on('info', (data, cb) => {
     const infoHelper = new helpers.infoHepler();
     infoHelper
@@ -145,11 +168,9 @@ io.on('connection', (socket) => {
       })
       .catch(error => {
         cb(error)
-      })
-  })
-
+      });
+  });
 });
-
 
 // Bind to a port
 server.listen(3005, () => {
