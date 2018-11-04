@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
     crossorigin="anonymous">
 
+  <link title="timeline-styles" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.css">
+
   <link rel="stylesheet" href="css/main.css">
 
 
@@ -95,8 +97,13 @@
 
         <section>
 
-          <h3>Node  <small id="nodeID">0:0:0:0:0:0:0:0:0000</small>
-            <button type="button" class="btn btn-primary pull-right" onclick="Restart">Restart</button>
+          <h3>Node  <small id="nodeID">0:0:0:0:0:0:0:0:0000</small>  <span class="badge badge-success hidden" id="connection">Connected</span>
+            <div class="btn-toolbar pull-right">
+              <button type="button" class="btn btn-primary " onclick="Restart">Restart</button>
+              <button type="button" class="btn btn-success" onclick="Launch">Launch</button>
+              <button type="button" class="btn btn-danger" onclick="Stop">Stop</button>
+
+            </div>
           </h3>
 
           <ul class="nav nav-tabs">
@@ -230,6 +237,7 @@
 
         <section>
           <h3>Peers</h3>
+          <div class="ct-chart .ct-square	"></div>
           <ul class="text-white bg-dark list-group" id="adminpeers"></ul>
           <!-- <p </p> -->
         </section>
@@ -315,6 +323,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
