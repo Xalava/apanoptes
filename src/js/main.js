@@ -178,7 +178,7 @@ $(function () {
           $('#consoleLogs').append($('<tr>').html(publishLine).addClass(''))
 
 
-        // if($("#auto-scroll").prop('checked') ) 
+         if($("#auto-scroll").prop('checked') )
           $('#consoleLogs').parent().animate({scrollTop: $('#consoleLogs').prop("scrollHeight")}, 0);
 
       }
