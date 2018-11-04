@@ -123,7 +123,6 @@ io.on('connection', (socket) => {
     socket.join(data.service);
     restartImage({name: data.service})
       .then(() => {
-        //if (typeof tails[data.service] == "undefined") {
         tails[data.service] = spawn('docker', ['run', '--name', data.service, '-p', '8545:8545', '-p', '13001:30303', 'pegasyseng/pantheon:latest', '--rpc-enabled', '--rpc-cors-origins "all"',`--logging=${data.logLevel}`],
           {
             shell: true
