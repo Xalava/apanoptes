@@ -115,8 +115,8 @@ io.on('connection', (socket) => {
           console.log(`got new data ${data.toString()}`);
 
           io.to(serviceName).emit('newLine', {
-            line: data.toString().replace(/\n/g, '<br />'),
-            parsed: data.toString().replace(/\n/g, '<br />').split('|')
+            line: data.toString(),
+            parsed: data.toString().split('|').map(str => str.trim())
           });
         });
         // }
