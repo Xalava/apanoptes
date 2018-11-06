@@ -5,7 +5,7 @@ const serverSocket = io('ws://' + AdminServer)
 
 // Chart Utilities
 let peersCount = [0]
-let peersHistory = {id :[], connections: []}
+let peersHistory = {id :[], connection: [], bodies:[], headers:[]}
 var peersChart
 var peersMetricsChart
 
@@ -18,8 +18,6 @@ let logs = []
 $(function () {
   var web3 = new Web3(Web3.givenProvider || RPCServer)
   console.log("Web3 is provided by ", web3.currentProvider.host)
-
-
 
   function getNetworkData() {
     web3.eth.net.getId()
@@ -47,7 +45,7 @@ $(function () {
       processData: false,
       success: function (data) {
         $("#connection").removeClass("hidden")
-        console.log(data)
+        // console.log(data)
         // Return
         // caps: ["eth/63"]
         // id: "0xe731e22173dda8f432fabba68365aa2e11d656ad9e64d0fafdbbcbadc566f477acc6ef5ae24be8ed481e09774651a7cbd87b7bfed61ab22c15b8c9d712e85369"
@@ -58,47 +56,28 @@ $(function () {
         // __proto__: Object
         // port: "0x0"
         // version: "0x5"
-        // peersHistory.push(data.result)
-        // let nodes= []
-        // l
-
-
-        // for (let i = 0; i < peersHistory.length; i++) {
-        //   nodes.push
-        //   const element = array[i];
-          
-        // }
-        // console.log(peersCount)
-        // peersMetricsChart.update({
-        //   labels: [],
-        //   series: [
-        //     [0,3,4]
-        //   ]
-        // })
+   
         $('#adminpeers').html("")
         for (let i = 0; i < data.result.length; i++) {
           const peer = data.result[i]
           $('#adminpeers')
             .append('<li class="list-group-item">' +
               '<p>' + peer.id.substr(0, 40) + '...  <span class="badge badge-secondary pull-right">' + peer.caps[0] + '<i> ' + peer.name + '</i>' +'</span></p>' +
-              // '<p> <i>' + peer.name + '</i></p>' +
               '<small> Network : ← ' + peer.network.localAddress + ' - ↑ ' + peer.network.remoteAddress + '</small>' +
-
               '</li>')
           let idx = peersHistory.id.findIndex(fruit => fruit === peer.id)
           if (idx == -1) {
             peersHistory.id.push(peer.id)
-            peersHistory.connections.push(0)
+            peersHistory.connection.push(1)
+            peersHistory.bodies.push(0)
+            peersHistory.headers.push(0)
+
+
           } else {
-            peersHistory.connections[idx] += 1
+            peersHistory.connection[idx] += (1 * REFRESHRATE/1000)
           }
-          console.log("PEERS HISTORY", peersHistory)
-          peersMetricsChart.update({
-          labels: peersHistory.id,
-          series: [
-            peersHistory.connections
-          ]
-          })
+          updatePeersMetricsChart()
+
         }
       },
       type: 'POST'
@@ -112,7 +91,6 @@ $(function () {
       },
       processData: false,
       success: function (data) {
-        // console.log("listening", data)
         $('#netlistening').html(data.result)
       },
       type: 'POST'
@@ -126,7 +104,6 @@ $(function () {
       },
       processData: false,
       success: function (data) {
-        // console.log("nvtverison", data)
         $('#chainid').html(data.result)
       },
       type: 'POST'
@@ -171,8 +148,6 @@ $(function () {
       type: 'POST'
     })
 
-
-
     web3.eth.getGasPrice()
       .then(
         (res) => {
@@ -201,6 +176,34 @@ $(function () {
       if (msg.parsed[1]) {
         logs.push(msg.parsed)
 
+        let idxBodies = msg.parsed[4].search("bodies from peer ")
+        //WARNING : Log implementation dependant
+        if (idxBodies > 0 ){
+          let downloadedFrom = msg.parsed[4].substring(idxBodies+17, idxBodies+37)
+          console.log("Bodies downloaded from", "*"+downloadedFrom+"*")
+          let matchingIdx = peersHistory.id.findIndex( id => { return id.substring(0,20) == downloadedFrom})
+          if (matchingIdx > -1){
+            let numberOfBodies = parseInt(msg.parsed[4].substring(11, 13).replace(/ /g, ''))
+            // .replace(/ /g, '');
+            console.log("Bodies Match",matchingIdx, '*'+msg.parsed[4].substring(11, 13)+'*')
+            peersHistory.bodies[matchingIdx] += numberOfBodies
+          }
+        }
+        // GetBodiesFromPeerTask | Requesting 20 bodies from peer 0xc32a56d31c9bcb6c9f
+        // GetHeadersFromPeerByHashTask | Requesting 20 headers from peer 0x8e83e76bf5e97e684f
+
+        let idxHeaders = msg.parsed[4].search("headers from peer ")
+        //WARNING : Log implementation dependant
+        if (idxHeaders > 0 ){
+          let downloadedFrom = msg.parsed[4].substring(idxHeaders+18, idxHeaders+38)
+          let matchingIdx = peersHistory.id.findIndex( id => { return id.substring(0,20) == downloadedFrom})
+          if (matchingIdx > -1){
+            let numberOfHeaders = parseInt(msg.parsed[4].substring(11, 13).replace(/ /g, ''))
+            console.log("Headers Match",matchingIdx, '*'+msg.parsed[4].substring(11, 13)+'*')
+
+            peersHistory.headers[matchingIdx] += numberOfHeaders
+          }
+        }
 
         var currentDate = Math.floor(( Date.parse(msg.parsed[0])- initialTimestamp )/1000)
   
@@ -258,17 +261,38 @@ $(function () {
   peersMetricsChart = new Chartist.Bar('#peersMetrics', {
     labels: [0],
     series: [
+      [0], 
+      [0],
       [0]
     ]
     },  {
       seriesBarDistance: 10,
-      reverseData: true,
+      // reverseData: true,
       horizontalBars: true,
       axisY: {
-        offset: 0
-      }
+        offset: 70  
+      },
+    //   plugins: [
+    //     Chartist.plugins.legend()
+    // ]
     }
   )
+
+  function updatePeersMetricsChart (){
+    peersMetricsChart.update({
+      labels: peersHistory.id,
+      series: [
+        peersHistory.connection,
+        peersHistory.headers,
+        peersHistory.bodies
+      ]
+      })
+  }
+
+  $('#peerDataModal').on('shown.bs.modal', function (e) {
+    updatePeersMetricsChart()
+  })
+  
 
 })
 

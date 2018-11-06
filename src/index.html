@@ -223,7 +223,7 @@
 
         <section>
           <h3>Peers</h3>
-          <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#peerData">
+          <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#peerDataModal">
             Metrics
           </button>
             
@@ -278,15 +278,21 @@
     <div class="row" style="text-align:center;padding:20px"><img src="apanoptes-logo.png"/></div>
 
   <!-- Modal -->
-  <div class="modal fade" id="peerData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
+  <div class="modal fade" id="peerDataModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Number of Connections by Peer</h4>
+            <h4 class="modal-title" id="myModalLabel">Peers Metrics </h4>
+            <div class="row">
+              <div class="col-xs-4"><span style="color:#d70206">&FilledSmallSquare; </span> Connection time</div>
+              <div class="col-xs-4"><span style="color:#f05b4f">&FilledSmallSquare; </span>Block headers </div>
+              <div class="col-xs-4"><span style="color:#f4c63d" >&FilledSmallSquare; </span>Block bodies</div>
+
+            </div>
           </div>
           <div class="modal-body">
-              <div class="ct-chart" id="peersMetrics"></div>
+              <div class="ct-chart ct-perfect-fifth	" id="peersMetrics"></div>
           </div>
 
         </div>
@@ -313,6 +319,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist-plugin-legend/0.6.2/chartist-plugin-legend.min.js"></script> -->
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
