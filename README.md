@@ -1,9 +1,16 @@
-# apanoptes
-Argus Panoptes, the giant to launch, monitor and analyse Pantheon Nodes
+# Argus Panoptes
 
-## Concept 
+Argus Panoptes is the giant to launch, monitor and analyse Pantheon Nodes. Pantheon, now Hyperledger Besu, is an Ethereum client focused on permissioned networks while maintaining comptability with Ethereum public network.
 
-Argus Panoptes can be launched locally or on a server to launch and manage Pantheon Nodes. It downloads the latest docker image, launches it and offers a frontend interface to monitor it. 
+This project won second place at the 2018 Pegasys hackathon and is no longer maintained. Its features have been integrated into Hyperledger Besu (https://besu.hyperledger.org/en/stable/Concepts/Monitoring/).
+
+## What it does
+
+- Pull and launch Pantheon from the latest docker image
+- Query information, using stdout and the JSON RPC of the node
+- Displays analytics such as the number and list of connected peers
+- Offer graphical commands to start, stop and reboot the node
+- Can be used locally or on a server
 
 ## Prerequisites
 
@@ -25,4 +32,3 @@ To avoid sudo, you can also use `sudo chmod 077 /var/run/docker.sock`. Please to
 ## Clean docker 
    
     sudo docker system prune --volumes
-
